@@ -1,4 +1,10 @@
 <?php
+Croogo::mergeConfig('elements', array(
+    'AparnicSlider.nivo_slider',
+    'AparnicSlider.bxslider',
+    'AparnicSlider.tshop_slider',
+));
+
 define('aparnicSliderUploadsDir', 'aparnic_slider');
 
 AparnicMetabox::addMetaJson('AparnicSlider');

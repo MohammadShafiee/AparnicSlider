@@ -36,8 +36,11 @@ echo $this->Form->create('AparnicSlider');
 				echo $this->Form->input('slug', array(
 					'label' => 'Slug',
 				));
+                $elementOptions = Configure::read('elements');
+                $elementOptions = array_combine($elementOptions, $elementOptions);
 				echo $this->Form->input('element', array(
 					'label' => 'Element',
+                    'options' => $elementOptions,
 				));
 			?>
 			</div>
