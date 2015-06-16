@@ -1,0 +1,20 @@
+{
+    "metaType":"meta",
+    "targetAction":["AparnicSliders/admin_add","AparnicSliders/admin_edit"],
+    "element":"",
+    "contentTypes":"",
+    "boxes":{
+        "Slider Basic Properties":[
+            {
+                "type":"text",
+                "name":"width",
+                "defaultValue":"230"
+            },
+            {
+                "type":"text",
+                "name":"height",
+                "defaultValue":"200"
+            }
+        ]
+    }
+}
