@@ -23,20 +23,25 @@ class AparnicSliderHelper extends AppHelper{
     public function filter(&$content, $options = array()) {
             $aparnicSliders = $this->__stringConverter->parseString('AparnicSlider', $content);
             foreach($aparnicSliders as $sliderAlias => $sliderAttr){
-                $content = str_replace($content, $this->__addAparnicSlider($sliderAlias), $content);
+                $newContent = $this->__addAparnicSlider($sliderAlias);
+                if(!empty($newContent)){
+                    $content = str_replace($content, $newContent, $content);
+                }
             }
             return $content;
     }
     //----------------------------------------------------------
     private function __addAparnicSlider($sliderAlias) {
-        $slider = $this->_View->viewVars['aparnic_slider_for_layout'][$sliderAlias];
-        $sliderElement = $slider['AparnicSlider']['element'];
-        $sliderData = array(
-            'slideImages' => $slider['AparnicSlide'],
-            'sliderOptions' => $slider['CustomFields']
-        );
         $output = '';
-        $output = $this->_View->element($sliderElement, $sliderData);
+        $slider = $this->_View->viewVars['aparnic_slider_for_layout'][$sliderAlias];
+        if(!empty($slider)){
+            $sliderElement = $slider['AparnicSlider']['element'];
+            $sliderData = array(
+                'slideImages' => $slider['AparnicSlide'],
+                'sliderOptions' => $slider['CustomFields']
+            );
+            $output = $this->_View->element($sliderElement, $sliderData);
+        }
         return $output;
         
     }

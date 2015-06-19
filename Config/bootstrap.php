@@ -14,6 +14,7 @@ Croogo::hookHelper('*', 'AparnicSlider.AparnicSlider');
 CroogoNav::add('sidebar', 'aparnic_slider', array(
 	'title' => __d('aparnic_slider', 'Aparnic Slider'),
 	'url' => '#',
+    'icon' => array('retweet', 'larg'),
 	'weight' => 50,
 	'children' => array(
 		'index' => array(
