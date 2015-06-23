@@ -1,0 +1,149 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-06-23 20:23+0330\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.1\n"
+
+#: Config/bootstrap.php:3
+msgid "Nivo slider"
+msgstr ""
+
+#: Config/bootstrap.php:4
+msgid "Bx slider"
+msgstr ""
+
+#: Config/bootstrap.php:5
+msgid "TSHOP slider"
+msgstr ""
+
+#: Config/bootstrap.php:15 View/AparnicSliders/admin_form.ctp:23
+msgid "Aparnic Slider"
+msgstr "اسلایدر"
+
+#: Config/bootstrap.php:21
+msgid "Sliders"
+msgstr "اسلایدر"
+
+#: Config/bootstrap.php:31
+msgid "New"
+msgstr "جدید"
+
+#: Config/bootstrap.php:47
+msgid "view slides"
+msgstr "مشاهده اسلاید"
+
+#: Controller/AparnicSlidersController.php:39;74;112
+#: Controller/AparnicSlidesController.php:61
+msgid "Invalid aparnic slider"
+msgstr "اسلایدر نامعتبر می باشد"
+
+#: Controller/AparnicSlidersController.php:57;81
+msgid "The aparnic slider has been saved"
+msgstr "اسلایدر با موفقیت ذخیره شد"
+
+#: Controller/AparnicSlidersController.php:60;84
+msgid "The aparnic slider could not be saved. Please, try again."
+msgstr "اطلاعات اسلایدر ذخیره نشد، مجددا سعی کنید"
+
+#: Controller/AparnicSlidersController.php:116
+msgid "Aparnic slider deleted"
+msgstr "اسلایدر با موفقیت حذف گردید"
+
+#: Controller/AparnicSlidersController.php:119
+msgid "Aparnic slider was not deleted"
+msgstr "خطا در حذف اسلایدر"
+
+#: Controller/AparnicSlidesController.php:42;68
+msgid "The aparnic slide has been saved"
+msgstr "اسلاید ذخیره نشد"
+
+#: Controller/AparnicSlidesController.php:45;71
+msgid "The aparnic slide could not be saved. Please, try again."
+msgstr "اطلاعات اسلاید ذخیره نشد، مجددا سعی کنید"
+
+#: Controller/AparnicSlidesController.php:64;90
+msgid "Invalid aparnic slide"
+msgstr "اسلاید نامعتبر می باشد"
+
+#: Controller/AparnicSlidesController.php:94
+msgid "Aparnic slide deleted"
+msgstr "اسلاید با موفقیت حذف گردید"
+
+#: Controller/AparnicSlidesController.php:97
+msgid "Aparnic slide was not deleted"
+msgstr "خطا در حذف اسلاید"
+
+#: View/AparnicSliders/admin_form.ctp:7
+msgid "Aparnic Sliders"
+msgstr "اسلایدرها"
+
+#: View/AparnicSliders/admin_form.ctp:34
+#: View/AparnicSliders/admin_index.ctp:15
+msgid "Title"
+msgstr "عنوان"
+
+#: View/AparnicSliders/admin_form.ctp:37
+#: View/AparnicSliders/admin_index.ctp:16
+msgid "Slug"
+msgstr "نام مستعار"
+
+#: View/AparnicSliders/admin_form.ctp:41
+#: View/AparnicSliders/admin_index.ctp:17
+msgid "Element"
+msgstr "قالب نمایش"
+
+#: View/AparnicSliders/admin_index.ctp:14
+#: View/AparnicSlides/admin_index.ctp:32
+msgid "id"
+msgstr "شناسه"
+
+#: View/AparnicSliders/admin_index.ctp:18
+msgid "Aparnic slide count"
+msgstr "تعداد اسلاید"
+
+#: View/AparnicSliders/admin_index.ctp:19
+msgid "shortcode"
+msgstr "شورت کد"
+
+#: View/AparnicSliders/admin_index.ctp:20
+msgid "Created"
+msgstr "تاریخ ایجاد"
+
+#: View/AparnicSlides/admin_form.ctp:23
+msgid "Aparnic Slide"
+msgstr "اسلاید"
+
+#: View/AparnicSlides/admin_form.ctp:42 View/AparnicSlides/admin_index.ctp:33
+msgid "Picture"
+msgstr "تصویر"
+
+#: View/AparnicSlides/admin_form.ctp:45 View/AparnicSlides/admin_index.ctp:34
+msgid "Caption"
+msgstr "شرح"
+
+#: View/AparnicSlides/admin_form.ctp:48 View/AparnicSlides/admin_index.ctp:35
+msgid "Link"
+msgstr "لینک"
+
+#: View/AparnicSlides/admin_index.ctp:12
+msgid "sliders"
+msgstr "اسلایدرها"
+
+#: View/AparnicSlides/admin_index.ctp:17
+msgid "slider"
+msgstr "اسلایدر"
+
+#: View/AparnicSlides/admin_index.ctp:22
+msgid "slide"
+msgstr "اسلاید"

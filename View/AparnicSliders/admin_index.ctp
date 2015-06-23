@@ -11,13 +11,13 @@ $this->Html
 <div class="aparnicSliders index">
 	<table class="table table-striped">
 	<tr>
-		<th><?php echo $this->Paginator->sort('id'); ?></th>
-		<th><?php echo $this->Paginator->sort('title'); ?></th>
-		<th><?php echo $this->Paginator->sort('slug'); ?></th>
-		<th><?php echo $this->Paginator->sort('element'); ?></th>
-		<th><?php echo $this->Paginator->sort('aparnic_slide_count'); ?></th>
+		<th><?php echo $this->Paginator->sort('id', __d('aparnic_slider', 'id')); ?></th>
+		<th><?php echo $this->Paginator->sort('title', __d('aparnic_slider', 'Title')); ?></th>
+		<th><?php echo $this->Paginator->sort('slug', __d('aparnic_slider', 'Slug')); ?></th>
+		<th><?php echo $this->Paginator->sort('element', __d('aparnic_slider', 'Element')); ?></th>
+		<th><?php echo $this->Paginator->sort('aparnic_slide_count', __d('aparnic_slider', 'Aparnic slide count')); ?></th>
 		<th><?php echo __d('aparnic_slider', 'shortcode'); ?></th>
-		<th><?php echo $this->Paginator->sort('created'); ?></th>
+		<th><?php echo $this->Paginator->sort('created', __d('aparnic_slider', 'Created')); ?></th>
 		<th class="actions"><?php echo __d('croogo', 'Actions'); ?></th>
 	</tr>
 	<?php foreach ($aparnicSliders as $aparnicSlider): ?>

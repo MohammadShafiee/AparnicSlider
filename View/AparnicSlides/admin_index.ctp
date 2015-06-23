@@ -9,17 +9,17 @@ $this->Html
 $sliderId = $this->request->params['pass'][0];
 $this->start('actions');
     echo $this->Croogo->adminAction(
-        __d('croogo', 'List %s', __d('croogo', 'sliders')),
+        __d('croogo', 'List %s', __d('aparnic_slider', 'sliders')),
         array('admin' => true, 'plugin' => 'aparnic_slider', 'controller' => 'aparnic_sliders', 'action' => 'index'),
         array('button' => 'default')
     );
     echo $this->Croogo->adminAction(
-        __d('croogo', 'New %s', __d('croogo', 'slider')),
+        __d('croogo', 'New %s', __d('aparnic_slider', 'slider')),
         array('admin' => true, 'plugin' => 'aparnic_slider', 'controller' => 'aparnic_sliders', 'action' => 'add'),
         array('button' => 'default')
     );
     echo $this->Croogo->adminAction(
-        __d('croogo', 'New %s', __d('croogo', 'slide')),
+        __d('croogo', 'New %s', __d('aparnic_slider', 'slide')),
         array('action' => 'add', $sliderId),
         array('button' => 'success')
     );
@@ -29,10 +29,10 @@ $this->end();
 <div class="aparnicSlides index">
 	<table class="table table-striped">
 	<tr>
-		<th><?php echo $this->Paginator->sort('id'); ?></th>
-		<th><?php echo $this->Paginator->sort('pic'); ?></th>
-		<th><?php echo $this->Paginator->sort('caption'); ?></th>
-		<th><?php echo $this->Paginator->sort('link'); ?></th>
+		<th><?php echo $this->Paginator->sort('id', __d('aparnic_slider', 'id')); ?></th>
+		<th><?php echo $this->Paginator->sort('pic', __d('aparnic_slider', 'Picture')); ?></th>
+		<th><?php echo $this->Paginator->sort('caption', __d('aparnic_slider', 'Caption')); ?></th>
+		<th><?php echo $this->Paginator->sort('link', __d('aparnic_slider', 'Link')); ?></th>
 		<th class="actions"><?php echo __d('croogo', 'Actions'); ?></th>
 	</tr>
 	<?php foreach ($aparnicSlides as $aparnicSlide): ?>

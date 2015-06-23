@@ -20,7 +20,7 @@ echo $this->Form->create('AparnicSlide', array('type' => 'file'));
 	<div class="span8">
 		<ul class="nav nav-tabs">
 		<?php
-			echo $this->Croogo->adminTab(__d('croogo', 'Aparnic Slide'), '#aparnic-slide');
+			echo $this->Croogo->adminTab(__d('aparnic_slider', 'Aparnic Slide'), '#aparnic-slide');
 			echo $this->Croogo->adminTabs();
 		?>
 		</ul>
@@ -39,13 +39,13 @@ echo $this->Form->create('AparnicSlide', array('type' => 'file'));
 				echo $this->Form->input('pic', array(
                                         'type' => 'file',
                                         'required' => false,
-					'label' => 'Pic',
+					'label' => __d('aparnic_slider', 'Picture'),
 				));
 				echo $this->Form->input('caption', array(
-					'label' => 'Caption',
+					'label' => __d('aparnic_slider', 'Caption'),
 				));
 				echo $this->Form->input('link', array(
-					'label' => 'Link',
+					'label' => __d('aparnic_slider', 'Link'),
 				));
 			?>
 			</div>

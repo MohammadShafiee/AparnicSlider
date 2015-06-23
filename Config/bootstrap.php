@@ -1,8 +1,8 @@
 <?php
-Croogo::mergeConfig('elements', array(
-    'AparnicSlider.nivo_slider',
-    'AparnicSlider.bxslider',
-    'AparnicSlider.tshop_slider',
+Croogo::mergeConfig('AparnicSlider.elements', array(
+    'AparnicSlider.nivo_slider' => __d('aparnic_slider', 'Nivo slider'),
+    'AparnicSlider.bxslider' => __d('aparnic_slider', 'Bx slider'),
+    'AparnicSlider.tshop_slider' => __d('aparnic_slider', 'TSHOP slider'),
 ));
 
 define('aparnicSliderUploadsDir', 'aparnic_slider');

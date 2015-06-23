@@ -4,7 +4,7 @@ $this->extend('/Common/admin_edit');
 
 $this->Html
 	->addCrumb('', '/admin', array('icon' => 'home'))
-	->addCrumb(__d('croogo', 'Aparnic Sliders'), array('action' => 'index'));
+	->addCrumb(__d('aparnic_slider', 'Aparnic Sliders'), array('action' => 'index'));
 
 if ($this->action == 'admin_edit') {
 	$this->Html->addCrumb($this->data['AparnicSlider']['title'], '/' . $this->request->url);
@@ -20,7 +20,7 @@ echo $this->Form->create('AparnicSlider');
 	<div class="span8">
 		<ul class="nav nav-tabs">
 		<?php
-			echo $this->Croogo->adminTab(__d('croogo', 'Aparnic Slider'), '#aparnic-slider');
+			echo $this->Croogo->adminTab(__d('aparnic_slider', 'Aparnic Slider'), '#aparnic-slider');
 			echo $this->Croogo->adminTabs();
 		?>
 		</ul>
@@ -31,17 +31,16 @@ echo $this->Form->create('AparnicSlider');
 				echo $this->Form->input('id');
 				$this->Form->inputDefaults(array('label' => false, 'class' => 'span10'));
 				echo $this->Form->input('title', array(
-					'label' => 'Title',
+					'label' => __d('aparnic_slider', 'Title'),
 				));
 				echo $this->Form->input('slug', array(
-					'label' => 'Slug',
+					'label' => __d('aparnic_slider', 'Slug'),
 				));
-                $elementOptions = Configure::read('elements');
-                $elementOptions = array_combine($elementOptions, $elementOptions);
-				echo $this->Form->input('element', array(
-					'label' => 'Element',
+                $elementOptions = Configure::read('AparnicSlider.elements');
+                echo $this->Form->input('element', array(
+                    'label' => __d('aparnic_slider', 'Element'),
                     'options' => $elementOptions,
-				));
+                ));
 			?>
 			</div>
 			<?php echo $this->Croogo->adminTabs(); ?>
