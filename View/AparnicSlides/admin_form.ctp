@@ -28,12 +28,18 @@ echo $this->Form->create('AparnicSlide', array('type' => 'file'));
 		<div class="tab-content">
 			<div id='aparnic-slide' class="tab-pane">
 			<?php
-                                $imagePath = '/' . aparnicSliderUploadsDir . '/' . $this->request->data['AparnicSlide']['pic'];
-                                echo $this->Html->image($imagePath, array(
-                                    'width' => '200px',
-                                    'height' => '200px'
-                                ));
-                                
+                if($this->action == 'admin_edit'){
+                    $imagePath = '/' . aparnicSliderUploadsDir . '/' . $this->request->data['AparnicSlide']['pic'];
+                    echo $this->Html->image($imagePath, array(
+                        'width' => '200px',
+                        'height' => '200px'
+                    ));
+                }else{
+                    echo $this->Form->input('aparnic_slider_id', array(
+                        'type' => 'hidden',
+                        'value' => $aparnicSliderId
+                    ));
+                }
 				echo $this->Form->input('id');
 				$this->Form->inputDefaults(array('label' => false, 'class' => 'span10'));
 				echo $this->Form->input('pic', array(

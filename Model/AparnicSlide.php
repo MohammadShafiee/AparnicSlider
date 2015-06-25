@@ -24,7 +24,7 @@ class AparnicSlide extends AparnicSliderAppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
-                        'counterCache' => true
+            'counterCache' => true
 		)
 	);
         //----------------------------------------------------------

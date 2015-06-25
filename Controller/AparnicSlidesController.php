@@ -86,13 +86,14 @@ class AparnicSlidesController extends AparnicSliderAppController {
  */
 	public function admin_delete($id = null) {
 		$this->AparnicSlide->id = $id;
+        $aparnicSliderId = $this->AparnicSlide->field('aparnic_slider_id', array('id' => $id));
 		if (!$this->AparnicSlide->exists()) {
 			throw new NotFoundException(__d('aparnic_slider', 'Invalid aparnic slide'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->AparnicSlide->delete()) {
 			$this->Session->setFlash(__d('aparnic_slider', 'Aparnic slide deleted'), 'default', array('class' => 'success'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('action' => 'index', $aparnicSliderId));
 		}
 		$this->Session->setFlash(__d('aparnic_slider', 'Aparnic slide was not deleted'), 'default', array('class' => 'error'));
 		$this->redirect(array('action' => 'index'));
